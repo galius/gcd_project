@@ -1,0 +1,6 @@
+*.zip
+UCI*
+*.html
+*.Rout
+.DS_Store
+.RData
