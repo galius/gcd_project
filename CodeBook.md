@@ -1,6 +1,8 @@
-# Code Book
+# Study Design
 
 ## Original Data Set (*)
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
 
 The original variables come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -37,6 +39,7 @@ fBodyGyroJerkMag
 
 
 The complete list of variables of each feature vector is available in 'features.txt'
+All variables mentioned above are normalized and bounded within [-1,1].
 
 ## Methodology
 
@@ -53,13 +56,13 @@ This data set is sorted by subject and activity using the `order` function.
 
 * The tidy data set is finally saved into a CSV file called **tidy_dataset.csv**
 
-## Tidy Data Set
-### Variables (type)
+# Code Book
+
 
 * Subject  : Volunteer number (**integer**)
 * Activity : Activities performed (**Factor w/ 6 levels: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS**)
 
-The following variables were extracted from the original data set on the mean *-mean()* and standard deviation *-std()* and then averaged for each activity and each subject as described above. These variable names are therefore prepended with *AVG_* to distinguish them from the original variable names.
+The following variables were extracted from the original data set on the mean *-mean()* and standard deviation *-std()* and then averaged for each activity and each subject as described above. These variable names are therefore prepended with *AVG_* to distinguish them from the original variable names. 
 
 
 * AVG_tBodyAcc_mean_X           (**numeric**)
