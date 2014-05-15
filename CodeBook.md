@@ -38,8 +38,8 @@ fBodyGyroJerkMag
 **-std(): Standard deviation**
 
 
-The complete list of variables of each feature vector is available in 'features.txt'
-All variables mentioned above are normalized and bounded within [-1,1].
+The complete list of variables of each feature vector is available in 'features.txt'.
+**All variables mentioned above are normalized and bounded within [-1,1].**
 
 ## Methodology
 
